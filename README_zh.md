@@ -8,6 +8,11 @@ FreeTempMail 是一个基于NuxtPro模板开发的免费的临时邮箱服务，
 
 👉 NuxtPro 商业版 $40 刀 限时早鸟折扣券 -> https://x.com/PennyJoly
 
+# 临时邮件图片
+
+<img width="1404" height="849" alt="image" src="https://github.com/user-attachments/assets/e49b146c-c99d-49ba-a4fe-cc8c2eb6c2aa" />
+
+
 # IMAP邮箱配置说明
 
 ## 概述
