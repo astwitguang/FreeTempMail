@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
       result += chars.charAt(Math.floor(Math.random() * chars.length))
     }
     
-    return `${result}@aitre.cc`
+    return `${result}@scu.edu.kg`
   }
 
   const email = generateRandomEmail()
@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
   return {
     success: true,
     email,
-    domain: 'aitre.cc',
+    domain: 'scu.edu.kg',
     message: '临时邮箱地址已生成'
   }
 }) 
