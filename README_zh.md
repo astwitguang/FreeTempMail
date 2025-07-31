@@ -12,6 +12,32 @@ FreeTempMail 是一个基于NuxtPro模板开发的免费的临时邮箱服务，
 
 <img width="1404" height="849" alt="image" src="https://github.com/user-attachments/assets/e49b146c-c99d-49ba-a4fe-cc8c2eb6c2aa" />
 
+## 🚀 如何快速开始项目
+
+1. 克隆仓库地址:
+```bash
+git clone https://github.com/PennyJoly/FreeTempMail
+```
+
+2. 安装依赖:
+```bash
+npm install
+# or
+pnpm install
+```
+
+3. 将“.env.example”克隆，重命名为".env.dev",填入对应内容:
+```bash
+cp .env.example .env.dev
+```
+
+4. 启动运行服务:
+```bash
+npm run dev
+```
+
+浏览器里输入 http://localhost:3000 查看启动的FreeTempMail应用.
+
 
 # IMAP邮箱配置说明
 
