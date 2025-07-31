@@ -111,6 +111,47 @@ IMAP_TLS=true
 3. **防火墙**: 确保服务器能够访问对应的IMAP端口。
 4. **邮件转发**: 确保您的域名邮件已正确配置转发到指定邮箱。
 
+## pm2部署
+
+- 创建  `ecosystem.config.cjs` 文件 
+
+```bash
+module.exports = {
+  apps:[{
+    name:'tempMail',
+    script:'.output/server/index.mjs',
+    exec_mode:'cluster',
+    env_production:{
+        NODE_ENV:'production',
+                NUXT_PUBLIC_ENV:'production',
+                PORT:3000,
+                NUXT_PUBLIC_PLAUSIBLE_DOMAIN:'你部署的临时邮箱连接到PLAUSIBLE的地址',
+                NUXT_PUBLIC_PLAUSIBLE_API_HOST:'你的PLAUSIBLE地址',
+                GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE:'你的谷歌控制台授权码',
+                IMAP_HOST:'imap域名',
+                IMAP_PORT:993,
+                IMAP_USERNAME:'imap用户名',
+                IMAP_PASSWORD:'imap授权验证码',
+                IMAP_TLS:true
+    }
+  }]
+};
+
+```
+
+- 创建pm2启动脚本 `start.sh` 文件
+
+```bash
+pm2 start ecosystem.config.cjs --env production
+```
+
+- 运行pm2启动脚本
+
+```bash
+sh start.sh
+```
+
+
 ## API接口
 
 ### 生成临时邮箱

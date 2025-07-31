@@ -113,6 +113,46 @@ IMAP_TLS=true
 3. **Firewall**: Make sure your server can access the corresponding IMAP port.
 4. **Email Forwarding**: Ensure that your temporary domain emails are properly configured to forward to the specified mailbox.
 
+## pm2 deploy
+
+- create  `ecosystem.config.cjs` file
+
+```bash
+module.exports = {
+  apps:[{
+    name:'tempMail',
+    script:'.output/server/index.mjs',
+    exec_mode:'cluster',
+    env_production:{
+        NODE_ENV:'production',
+                NUXT_PUBLIC_ENV:'production',
+                PORT:3000,
+                NUXT_PUBLIC_PLAUSIBLE_DOMAIN:'your domain url',
+                NUXT_PUBLIC_PLAUSIBLE_API_HOST:'your-PLAUSIBLE-url',
+                GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE:' your Google Search Console verifyCode',
+                IMAP_HOST:'imap url',
+                IMAP_PORT:993,
+                IMAP_USERNAME:'imap username',
+                IMAP_PASSWORD:'imap auth code',
+                IMAP_TLS:true
+    }
+  }]
+};
+
+```
+
+- create pm2 start script `start.sh` 
+
+```bash
+pm2 start ecosystem.config.cjs --env production
+```
+
+- run pm2 start script
+
+```bash
+sh start.sh
+```
+
 ## API INTERFACES
 
 ### Generate Temporary Email
