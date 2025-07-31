@@ -14,6 +14,33 @@ FreeTempMail is a free temporary email service that allows you to create disposa
 
 <img width="1404" height="849" alt="image" src="https://github.com/user-attachments/assets/e49b146c-c99d-49ba-a4fe-cc8c2eb6c2aa" />
 
+## 🚀 How to Quickly Start the Project
+
+1. Clone the repository:
+```bash
+git clone https://github.com/PennyJoly/FreeTempMail
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+pnpm install
+```
+
+3. Copy environment variables:
+```bash
+cp .env.example .env.dev
+```
+
+4. Start the development server:
+```bash
+npm run dev
+```
+
+Visit http://localhost:3000 to view your nuxtpro application.
+
+
 # IMAP Email Configuration Guide
 
 ## Overview
