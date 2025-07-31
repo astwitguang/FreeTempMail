@@ -18,7 +18,7 @@ FreeTempMail is a free temporary email service that allows you to create disposa
 
 ## Overview
 
-This temporary email system connects to your specified mailbox via the IMAP protocol to retrieve emails forwarded to your @aitre.cc domain address.
+This temporary email system connects to your specified mailbox via the IMAP protocol to retrieve emails forwarded to yours domain address.
 
 ## Environment Variable Configuration
 
@@ -107,7 +107,7 @@ IMAP_TLS=true
 ## Usage Process
 
 1. Configure environment variables
-2. Ensure that @aitre.cc domain emails are forwarded to your mailbox
+2. Ensure that domain emails are forwarded to your mailbox
 3. Start the application
 4. Click the "Generate New Email" button
 5. The system will automatically poll for new emails
