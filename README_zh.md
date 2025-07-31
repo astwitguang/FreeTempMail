@@ -2,6 +2,8 @@
 
 FreeTempMail 是一个基于NuxtPro模板开发的免费的临时邮箱服务，允许您创建一次性邮箱地址以保护您的隐私。无需注册，即时生成，自动接收邮件。清新🍃简约免费🆓无广告🚫用后即焚！再也不用因为被商家收集隐私而烦恼😎
 
+- [👉 FreeTempMail线上版本地址](https://mail.aitre.cc)
+
 - [👉 NuxtPro开版版本源码地址](https://github.com/PennyJoly/NuxtPro)
 
 🚀 如果你在寻找基于Nuxt框架，且自带后台管理系统，前后端兼容友好的一站式出海Saas模板，不妨看看NuxtPro的商业版?(https://nuxtpro.com). NuxtPro商业版让您1小时快速上线MVP，验证需求，节省大量研发时间。NuxtPro专注于小而美的产品，让您有更多时间花在推广和运营上，搭配上主流的AI产品，一人公司即可高效地创收。
