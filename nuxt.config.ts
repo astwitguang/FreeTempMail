@@ -33,7 +33,7 @@ export default defineNuxtConfig({
     vueI18n: '@@/i18n/config.ts',
   },
   llms: {
-    domain: 'https://mail.aitre.cc',
+    domain: 'https://mail.scu.edu.kg',
     title: 'Free Temporary Email | FreeTempMail',
     description: 'FreeTempMail is a free temporary email service that allows you to create disposable email addresses to protect your privacy. No registration required, instant generation, automatic email reception.',
     sections: [
@@ -44,17 +44,17 @@ export default defineNuxtConfig({
           {
             title: 'FreeTempMail `s Features',
             description: 'FreeTempMail is a free temporary email service that allows you to create disposable email addresses to protect your privacy. No registration required, instant generation, automatic email reception.',
-            href: 'https://mail.aitre.cc/#features',
+            href: 'https://mail.scu.edu.kg/#features',
           },
           {
             title: 'FreeTempMail `s testimonials',
             description: 'What Our Customers Say?.',
-            href: 'https://mail.aitre.cc/#testimonials',
+            href: 'https://mail.scu.edu.kg/#testimonials',
           },
           {
             title: 'FreeTempMail `s faq',
             description: 'the most frequently asked questions.',
-            href: 'https://mail.aitre.cc/#faq',
+            href: 'https://mail.scu.edu.kg/#faq',
           }
         ]
       }
@@ -104,7 +104,7 @@ export default defineNuxtConfig({
   },
   vite: {
     server: {
-      allowedHosts: ['mail.aitre.cc'] // 允许指定域名
+      allowedHosts: ['mail.scu.edu.kg'] // 允许指定域名
     }
   }
 })
