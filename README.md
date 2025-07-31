@@ -12,6 +12,8 @@ FreeTempMail is a free temporary email service that allows you to create disposa
 
 👉 NuxtPro Commercial Version $40 Limited Time Early Bird Discount Coupon -> https://x.com/PennyJoly
 
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/astwitguang/FreeTempMail)
+
 # TempMail image
 
 <img width="1404" height="849" alt="image" src="https://github.com/user-attachments/assets/e49b146c-c99d-49ba-a4fe-cc8c2eb6c2aa" />
